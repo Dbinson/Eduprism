@@ -1,0 +1,83 @@
+.courseHeading{
+    margin-top: 22px;
+    background: url('../asset/lll.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    height: 90vmin;
+}
+.right-rect{
+    height: 7vmin;
+}
+
+.overText{
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  font-size: 10rem;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+
+}
+
+.main{
+    height: 65vmin;
+}
+
+.flexContainer{
+    margin-top: 35px;
+    display: flex;
+}
+
+.item{
+    height: 50vmin;
+    width: 48.35vmin;
+}
+
+.item-content{
+    display: flex;
+    flex-direction: column;
+    height: 50vmin;
+    padding: 25px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.item-content:hover{
+    box-shadow: 1px 2px 10px black;
+}
+
+.item div img{
+    width: 96%;
+    height: 25vmin;
+}
+.item div h3{
+    margin-top: 30px;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+.header-logo{
+    margin: 10px 35px;
+    display: flex;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+.head-text h1 span{
+    font-size: 3.5rem;
+}
+.head-text h1{
+    font-size: 2.5rem;
+    text-shadow: none;
+   color: rgb(13, 27, 105);
+}

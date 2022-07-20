@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/form.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style2.css">
+    <title>login</title>
+
+    <script src="./index.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!--top bar-->
+            <div class="col-6 rect" >
+                <!--Header logo-->
+                <div class="header-logo ">
+                    <img src="../asset/2.jpg" alt="logo">
+                    <div class="header foot-head head-text">
+                        <h1><span>EDU</span>prism</h1>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-6 right-rect">
+                <div class="nav">
+                    <ul>
+                        <li class="no"><a href="./index.html">Home</a></li>
+                        <li class="no"><a href="./courses.html">Courses</a></li>
+                        <li class="no"><a href="./achivements.html">Achivements</a></li>
+                        <li>
+                            <div style="visibility: hidden;">
+                                <button type="submit" id="btn1" onclick="openPage('register.html')">Login</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 main-sec">
+                <div class="form-container " id="frm1">
+                    <form style="height: 95%;">
+                        <div class="form-header">
+                            <h4>Sign up</h4>
+                        </div>
+                        <hr>
+                        <input type="text" name="" class="input-box" placeholder="Name" required>
+                        <input type="number" name="" class="input-box" placeholder="Mobile Number" required>
+                        <input type="email" name="" class="input-box" placeholder="Email" required>
+                        <input type="password" name="" class="input-box" placeholder="Password" required>
+                        <input type="password" name="" class="input-box" placeholder="Comfirm Password" required>
+                        <button type="submit" onclick="open2()">Sign up</button>
+                        <hr>
+                        <span>Already registered? <a onclick="open2()" style="cursor: pointer;">Sign in Here</a></span>
+                    </form>
+                </div>
+                <div class="form-container active" id="frm2">
+                    <form action="./index.html" >
+                        <div class="form-header ">
+                            <h4>Sign in</h4>
+                        </div>
+                        <hr>
+                        <input type="email" name="" placeholder="Email" class="input-box" required>
+                        <input type="password" name="" placeholder="Password" class="input-box" required>
+                        <button type="submit" onclick="alert('submited')">Sign in</button>
+                        <hr>
+                        <span>Dont have an account? <a onclick="open1()" style="cursor: pointer;">Register Here</a></span>
+                    </form>
+            </div>
+        </div>
+    </div>
+    
+        <script>
+            function open1(){
+                document.getElementById("frm2").classList.remove("active")
+                document.getElementById("frm1").classList.add("active")
+            }
+            function open2(){
+                document.getElementById("frm1").classList.remove("active")
+                document.getElementById("frm2").classList.add("active")
+            }
+        </script>
+</body>
+</html>

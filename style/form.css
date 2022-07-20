@@ -1,0 +1,105 @@
+.form-container form, .overflow{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    visibility: hidden;
+}
+
+.form-container form{
+    background-color: #CDCBD6;
+}
+
+::placeholder{
+    color: rgb(99, 28, 10);
+}
+
+.input-box{
+    text-align: center;
+    font-weight: 900;
+    width: 250px;
+    height: 5px;
+    padding: 20px;
+    margin: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+hr{
+    margin: 25px 0;
+    width: 500px;
+    height: 3px;
+    background-color: #FEDD89;
+}
+
+.form-container form  span{
+    margin: 25px;
+    font-weight: 700;
+}
+.form-header{
+    margin-bottom: 25px;
+}
+
+.form-header h4{
+    font-size: 3rem;
+}
+
+.form-container form span a{
+    text-decoration: none;
+    color: black;
+}
+
+.form-container form span a:hover{
+    color: #3d3a32;
+}
+.container form{
+    background-color: #CDCBD6;
+}
+
+.container form div{
+    margin-bottom: 20px;
+}
+
+.container form h1{
+    
+    font-family:Bell MT;
+}
+
+.overflow{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    backdrop-filter: blur(5px);
+}
+
+
+.form-container.active{
+    visibility: visible;
+}
+
+
+.closebtn span{
+    position: absolute;
+    top: 0px;
+    left: 85%;
+    font-size: 2rem;
+}
+
+.closebtn span:hover{
+    cursor: pointer;
+}
+
+.main-sec{
+    height: 99vmin;
+}

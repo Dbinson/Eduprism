@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style/style2.css">
+    <link rel="stylesheet" href="./style/form.css">
+    <title>Courses</title>
+
+    <script src="./index.js"></script>
+
+    <style>
+        .form-container form, .overflow{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!--top bar-->
+            <div class="col-6 rect" >
+                <!--Header logo-->
+                <div class="header-logo ">
+                    <img src="../asset/2.jpg" alt="logo">
+                    <div class="header foot-head head-text">
+                        <h1><span>EDU</span>prism</h1>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-6 right-rect">
+                <div class="nav">
+                    <ul>
+                        <li class="no"><a href="./index.html">Home</a></li>
+                        <li class="no"><a href="./courses.html">Courses</a></li>
+                        <li class="no"><a href="./achivements.html">Achivements</a></li>
+                        <li>
+                            <div>
+                                <button type="submit" id="btn1" onclick="openPage('register')">Login</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!--middle session-->
+            <div class="row"> <!--middle image session-->
+                <div class="col-12">
+                    <div class="courseHeading"></div>
+                    <div class="overText">
+                        <h1>Courses</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row"> <!--middle main content session-->
+                <div class="col-12 main">
+                    <div class="flexContainer">
+                        <div class="item">
+                                <div class="item-content">
+                                    <img src="../asset/web.jpg" alt="image">
+                                    <h3>Web Development</h3>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <div class="item-content">
+                                    <img src="../asset/se.jpg" alt="image">
+                                    <h3>Software Engineering</h3>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <div class="item-content">
+                                    <img src="../asset/db.jpg" alt="image">
+                                    <h3>DBMS</h3>
+                                </div>
+                        </div>
+                        <div class="item">
+                                <div class="item-content">
+                                    <img src="../asset/qq.jpg" alt="image">
+                                    <h3>Information System</h3>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 footer">
+                    <div class="row">
+                        <div class="col-6 left-footer">
+                            <img src="../asset/2.jpg" alt="logo">
+                            <div class="header foot-head">
+                                <h1><span>EDU</span>prism</h1>
+                                <div class="cont-sec">
+                                    <p>Mobile no: <span>999999999</span></p>
+                                    <p>Email: <span>unknown@gmail.com</span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 right-footer">
+                            <div>
+                                <p>Follow us On :</p>
+    
+                                <div class="ic">
+                                    <a href="#" class="fa fa-facebook"></a>  
+                                    <a href="#" class="fa fa-twitter"></a>  
+                                    <a href="#" class="fa fa-pinterest"></a>  
+                                    <a href="#" class="fa fa-linkedin"></a>  
+                                    <a href="#" class="fa fa-instagram"></a>  
+                                    <a href="#" class="fa fa-youtube"></a>  
+                                    <a href="#" class="fa fa-google"></a>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container ">
+        <div class="overflow">
+            <form action="index.html" onsubmit="alert('Submitted');" style="height: 95%;">
+                <div class="closebtn">
+                    <span >&#10006</span>
+                </div>
+                <div class="form-header">
+                    <h4>Contact Us</h4>
+                </div>
+                <hr>
+                <input type="text" name="" class="input-box" placeholder="Name" required>
+                <input type="number" name="" class="input-box" placeholder="Mobile Number" required >
+                <input type="email" name="" class="input-box" placeholder="Email" >
+                <button type="submit" >Register</button>
+                <hr>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var item = document.querySelectorAll(".item-content")
+        var form = document.querySelector(".form-container")
+        var closebtn = document.querySelector(".closebtn span")
+
+        if(item){
+            for (i = 0; i < item.length; i++) {
+                item[i].addEventListener("click", function (){
+                    document.querySelector(".form-container").classList.add("active")
+                })
+            }
+        }
+
+        if(closebtn){
+            closebtn.addEventListener("click", function (){
+                document.querySelector(".form-container").classList.remove("active")
+            })
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+.fa {  
+    text-align: center;  
+    margin: 5px 2px;  
+    font-size: 1.5rem;  
+    width: 5vmin;  
+  }  
+  .fa-facebook {  
+    color: white;  
+  }  
+  .fa-twitter {  
+    color: white;  
+  }  
+  .fa-pinterest {  
+    color: white;  
+  }  
+  .fa-linkedin {  
+    color: white;  
+  }  
+  .fa-instagram {  
+    color: white;  
+  }  
+  .fa-youtube {  
+    color: white;  
+  }  
+  .fa-google {  
+    color: white;  
+  }  
+  .fa:hover {  
+    color: black;
+  }  

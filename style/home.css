@@ -1,0 +1,41 @@
+
+.bulb{
+    height: 74vmin;
+    width: 70vmin;
+    margin: auto;
+    transform: translatey(20%);
+}
+
+.bulb img{
+    
+    height: 87vmin;
+    width: 54vmin;
+    transform: translate(25%,-12%);
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    
+}
+.main-left{
+    height: 75vmin;
+    padding: 35px 25px;
+}
+
+.content h2{
+    font-size: 2.5rem;
+}
+
+
+.content ul .list{
+    margin: 5px 0;
+    font-size: 1.7rem;
+    color: rgb(73, 70, 70);
+}
+.content ul{
+    margin-top: 35px;
+    transform: translatex(12%);
+}
+.header-pos{
+    position: absolute;
+    top:6%;
+    left: 5%;
+}
